@@ -1,0 +1,40 @@
+<html>
+<head>
+    <style>
+        /* Hides the buttons for adjusting left and right halves */
+        .hide-buttons {
+            display: none;
+        }
+        
+        /* Basic styling for halves */
+        .half {
+            width: 50%;
+            float: left;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="half left">
+        <!-- Left half content -->
+        <h1>Left Half</h1>
+        <button class="hide-buttons">Adjust Left</button>
+    </div>
+    <div class="half right">
+        <!-- Right half content -->
+        <h1>Right Half</h1>
+        <button class="hide-buttons">Adjust Right</button>
+    </div>
+    
+    <script>
+        document.querySelector('.left').onclick = function() {
+            // Logic for navigating to left half
+            window.location.href = 'left.html';
+        };
+        document.querySelector('.right').onclick = function() {
+            // Logic for navigating to right half
+            window.location.href = 'right.html';
+        };
+    </script>
+</body>
+</html>
